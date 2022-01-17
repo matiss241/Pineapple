@@ -4,10 +4,10 @@ class Applicants
 {
 
     /*Gets all elements from database*/
-
     function get_all($POST = '')
     {
         $sort = 'date';
+
         if (isset($POST)) {
             $sort = $POST;
         }
@@ -18,6 +18,7 @@ class Applicants
         $data = $DB->read($query);
 
         if (is_array($data)) {
+
             return $data;
         }
 
@@ -25,10 +26,8 @@ class Applicants
     }
 
     /*Deletes elements from database that had been checked*/
-
     function deleteRecords($POST)
     {
-
         $DB = new Database();
         $data = [];
         $all_id = $POST;
@@ -39,13 +38,12 @@ class Applicants
         }
 
         if ($data) {
-            header("Location:" . ROOT . "show_database");
+            header("Location:" . ROOT . "showDatabase");
             die;
         }
     }
 
     /*Returns searched email from database if one exists*/
-
     function getEmail($POST, $flag)
     {
         $DB = new Database();
@@ -56,19 +54,21 @@ class Applicants
         $data = $DB->read($query);
 
         if (is_array($data)) {
+
             if ($flag == 'true') {
+
                 return $data[0];
             }
+
             return $data;
         }
+
         return false;
     }
 
     /*Returns all emails from database with required provider*/
-
     function specificEmails($provider = '')
     {
-
         $DB = new Database();
 
         $query = "select * from users";
@@ -76,6 +76,7 @@ class Applicants
         $valid_emails = [];
         foreach ($data as $a => $b) {
             $email = $b->email;
+
             if ($provider == getOneProvider($email)) {
                 array_push($valid_emails, $email);
             }

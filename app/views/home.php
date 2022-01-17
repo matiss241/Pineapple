@@ -13,7 +13,6 @@
 <body>
 <div class="front_page">
     <div class="subscription">
-
         <!-- Header -->
         <div class="front_page_header">
             <?php $this->view("header", $data); ?>
@@ -65,7 +64,6 @@
         <img src="<?= ASSETS ?>img/background.png">
     </div>
 </div>
-
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <script src="<?= ASSETS ?>js/validation.js"></script>

@@ -16,7 +16,7 @@
 
 .title {
     font-size: 32px;
-    font-family: Georgia;
+    font-family: "Georgia";
     font-style: normal;
     font-weight: 400;
 }
@@ -26,7 +26,7 @@
     font-size: 16px;
     font-weight: 400;
     color: #6A707B;
-    font-family: Arial;
+    font-family: "Arial";
 }
 
 .image {
@@ -49,7 +49,6 @@
     font-size: 16px;
     font-family: Arial;
     color: #6A707B;
-
 }
 
 input:focus {
@@ -58,12 +57,10 @@ input:focus {
 
 .icon_arrow:hover {
     color: #4066A5;
-
 }
 
 .icon {
     color: #A4A4A4;
-
 }
 
 .arrow {
@@ -104,6 +101,7 @@ input:focus {
 }
 
 @media (max-width: 768px) {
+
     * {
         margin: 0;
         padding: 0;
@@ -114,7 +112,6 @@ input:focus {
     }
 
     body {
-
         background-image: url("../img/background_mobile.png");
         background-size: 100%;
         background-repeat: no-repeat;
@@ -123,9 +120,7 @@ input:focus {
     .front_page_header {
         position: absolute;
         margin: 0;
-
         top: 0;
-
         width: 100%;
     }
 
@@ -138,7 +133,6 @@ input:focus {
         align-items: center;
         justify-content: center;
         width: 100%;
-
     }
 
     .main {
@@ -172,7 +166,6 @@ input:focus {
         width: 90%;
         height: 60px;
         text-indent: 1vw;
-
     }
 
     .arrow {

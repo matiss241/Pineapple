@@ -14,7 +14,6 @@
 
 </head>
 <body>
-
 <!-- Sort by date or email -->
 <h3>Sort by:
     <span>
@@ -27,7 +26,6 @@
         </form>
     </span>
 </h3>
-
 <!-- Find email -->
 <h3>Find email:
     <span>
@@ -48,7 +46,6 @@
                 <button type="submit" name="delete">Delete</button>
             </th>
         </tr>
-
         <!-- Print database data in table -->
         <?php foreach ($data['applicants'] as $row): ?>
             <tr>
@@ -62,7 +59,6 @@
 
     </table>
 </form>
-
 <!-- Email provider buttons for selecting emails with specific email provider -->
 <form method="post">
     <?php foreach ($data['email_providers'] as $row): ?>

@@ -1,14 +1,11 @@
 
 <!-- Footer -->
-
 <section>
     <div class="footer">
-
         <!-- Line -->
         <div class="line">
             <hr>
         </div>
-
         <!-- Social icons -->
         <div class="container">
             <ul class="social_icons">

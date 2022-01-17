@@ -8,9 +8,8 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-
 }
+
 .container {
     display: block;
 }
@@ -21,29 +20,26 @@ ul {
     margin: 20px 0 0 100px;
     text-align: center;
     justify-content: center;
-
 }
 
 .line {
     margin: 10px 50px 10px 140px;
 }
+
 .facebook, .instagram, .twitter, .youtube {
     display: flex;
     height: 50px;
     width: 50px;
-    border-style: solid;
-    border-color: #E2E3E4;
+    border: solid #E2E3E4;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
     margin:0 25px 0 0;
-
 }
 
 .facebook:hover {
     background-color: #4267B2;
     border-color: #4267B2;
-
 }
 
 .instagram:hover {
@@ -51,41 +47,48 @@ ul {
     border-color: #c13584;
     color: #ffffff;
 }
+
 .twitter:hover {
     background-color: #1da1f2;
     border-color: #1da1f2;
     color: #ffffff;
 }
+
 .youtube:hover {
     background-color: #ff0000;
     border-color: #ff0000;
     color: #ffffff;
 }
+
 .facebook:active {
     background-color: #2f4a80;
     border-color: #2f4a80;
     color: #ffffff;
 }
+
 .instagram:active {
     background-color: #8f2762;
     border-color: #8f2762;
     color: #ffffff;
 }
+
 .twitter:active {
     background-color: #177fbf;
     border-color: #177fbf;
     color: #ffffff;
 }
+
 .youtube:active {
     background-color: #cc0000;
     border-color: #cc0000;
     color: #ffffff;
 }
+
 @media (max-width: 768px) {
+
     .footer {
         margin-top: 20px;
     }
-
 
     .social_icons {
         margin: 20px 15px 0 0;
@@ -96,6 +99,5 @@ ul {
     }
     .facebook, .instagram, .twitter, .youtube {
         margin: 0 15px 0 0 ;
-
     }
 }

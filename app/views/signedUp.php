@@ -35,7 +35,7 @@
                         You have successfully subscribed to our email listing. Check your email for the discount code.
                     </p>
                     <!-- Link to database page -->
-                    <a href="<?= ROOT ?>show_database">Check the database</a>
+                    <a href="<?= ROOT ?>showDatabase">Check the database</a>
 
                 </div>
             </section>

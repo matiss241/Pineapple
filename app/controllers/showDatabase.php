@@ -1,57 +1,42 @@
 <?php
 
-class Show_database extends Controller
+class ShowDatabase extends Controller
 {
     function index()
     {
-        $data['page_title'] = "show database";
-
-        /*Sorting by date or email*/
+        $data['page_title'] = "Show database";
 
         if (isset($_POST['parameters'])) {
+            /*Sorting by date or email*/
             $applicants = $this->loadModel("applicants");
             $result = $applicants->get_all($_POST['parameters']);
             $data['applicants'] = $result;
-        }
-
-        /*Delete checked elements*/
-
-        elseif (isset($_POST['delete_items'])) {
+        } elseif (isset($_POST['delete_items'])) {
+            /*Delete checked elements*/
             $applicants = $this->loadModel("applicants");
             $result = $applicants->deleteRecords($_POST['delete_items']);
             $data['applicants'] = $result;
-        }
-
-        /*Find emails by search*/
-
-        elseif (isset($_POST['get_email'])) {
+        } elseif (isset($_POST['get_email'])) {
+            /*Find emails by search*/
             $applicants = $this->loadModel("applicants");
             $result = $applicants->getEmail($_POST['get_email'], 'false');
             $data['applicants'] = $result;
-        }
-
-        /*Find emails by email provider buttons*/
-
-        elseif (isset($_POST['sort_emails'])) {
+        } elseif (isset($_POST['sort_emails'])) {
+            /*Find emails by email provider buttons*/
             $applicants = $this->loadModel("applicants");
             $result = $applicants->specificEmails($_POST['sort_emails']);
             $data['applicants'] = $result;
-
-        }
-
-        /*Load whole database*/
-
-        else {
+        } else {
+            /*Load whole database*/
             $applicants = $this->loadModel("applicants");
             $result = $applicants->get_all('date');
             $data['applicants'] = $result;
         }
 
         /*Get all email providers for buttons*/
-
-        $email_providers = $this->loadModel("email_providers");
+        $email_providers = $this->loadModel("emailProviders");
         $result = $email_providers->emailProviders();
         $data['email_providers'] = $result;
-        $this->view("show_database", $data);
+        $this->view("showDatabase", $data);
     }
 }

@@ -1,8 +1,7 @@
 <?php
 
 /*Validates email depending on input*/
-
-function validateEmail($email, $checkbox)
+function validateEmail($email = '', $checkbox = '')
 {
     /*Checks if email input is not empty*/
     if ($email != '') {
@@ -29,7 +28,6 @@ function validateEmail($email, $checkbox)
 }
 
 /*Returns email providers for email filtering with buttons*/
-
 function getAllProviders($data = '')
 {
     $email_providers = [];
@@ -43,27 +41,30 @@ function getAllProviders($data = '')
             array_push($email_providers, $domain);
         }
     }
+
     if (is_array($email_providers)) {
+
         return $email_providers;
     }
+
     return false;
 }
 
 /*Returns email provider after whole email is provided for the function*/
-
 function getOneProvider($data = '')
 {
     $email = explode('@', $data);
     $domain = array_pop($email);
     $provider = explode('.', $domain);
     $domain = array_shift($provider);
+
     return $domain;
 }
 
 /*Prints error message*/
-
 function check_message()
 {
+
     if (isset($_SESSION['error']) && $_SESSION['error'] != "") {
         echo $_SESSION['error'];
         unset($_SESSION['error']);
