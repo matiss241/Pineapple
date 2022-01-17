@@ -1,4 +1,4 @@
-#WEB DEVELOPER TEST FOR MAGEBIT
+# WEB DEVELOPER TEST FOR MAGEBIT
 To run this project locally clone this repo: `git clone git@github.com:matiss241/Web-Developer-Test.git`
 
 To run this website you can use MAMP
