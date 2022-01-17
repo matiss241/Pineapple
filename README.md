@@ -11,7 +11,7 @@ To run this project locally clone this repo: `git clone git@github.com:matiss241
 ## Prepare database information
 - To change database information, go to app/core/config.php
 - Set DB_USER (username for database) and DB_PASS (password for database) vareables
-- Pres >Start Server
+- Pres > Start Server
 - In browzer you can type in http://localhost/public/ and you will be directed to the Home page
 - To access the database go to http://localhost/phpMyAdmin/
 Run the website
