@@ -1,14 +1,19 @@
-# WEB DEVELOPER TEST FOR MAGEBIT
+# PINEAPPLE
+## Clone github repo to your local machene
 To run this project locally clone this repo: `git clone git@github.com:matiss241/Web-Developer-Test.git`
 
-To run this website you can use MAMP
-[MAMP download](https://www.mamp.info/en/downloads/)
+## Set up MAMP
+- To run this application you can download [MAMP](https://www.mamp.info/en/downloads/)
+- Once MAMP is downloaded and opened go to > MAMP/PREFERENCES/Web server
+- As document root choose pineapple directory
+- Apache webserver was used in production
 
-In MAMP you can choose your port to use for localhost
-In this project port 3306 was used
-Use the Apache server to run the project. There were some problems if Nginx was used.
-To change port/user/password you can go to Web-Developer-Test/Models/DB.php and change the necessary information
-Make sure to put the root directory as Web-Developer-Test folder
+## Prepare database information
+- To change database information, go to app/core/config.php
+- Set DB_USER (username for database) and DB_PASS (password for database) vareables
+- Pres >Start Server
+- In browzer you can type in http://localhost/public/ and you will be directed to the Home page
+- To access the database go to http://localhost/phpMyAdmin/
 Run the website
 Start the server with MAMP
 In the browser type: `localhost:80/Views/layout.php
