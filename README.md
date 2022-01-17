@@ -2,7 +2,7 @@
 To run this project locally clone this repo: `git clone git@github.com:matiss241/Web-Developer-Test.git`
 
 To run this website you can use MAMP
-MAMP download
+[MAMP download](https://www.mamp.info/en/downloads/)
 
 In MAMP you can choose your port to use for localhost
 In this project port 3306 was used
