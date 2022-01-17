@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.front_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subscription {
+    width: 35%;
+}
+
+.title {
+    font-size: 32px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6A707B;
+    font-family: Arial;
+}
+
+.image {
+    width: 65%;
+}
+
+.description {
+    margin: 234px 50px 0 140px;
+}
+
+.email_input form input {
+    position: absolute;
+    margin: 30px 0 25px 100px;
+    background: #ffffff;
+    border: 1px solid #e3e3e4;
+    border-left: 4px solid #4066a5;
+    width: 35%;
+    height: 70px;
+    text-indent: 2vw;
+    font-size: 16px;
+    font-family: Arial;
+    color: #6A707B;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.icon_arrow:hover {
+    color: #4066A5;
+
+}
+
+.icon {
+    color: #A4A4A4;
+
+}
+
+.arrow {
+    position: absolute;
+    margin: 60px 0px 0px 37vw;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.email_input form input:hover {
+    border: 1px solid #4066a5;
+    border-left: 4px solid #4066a5;
+}
+
+.terms_of_services {
+    position: absolute;
+    margin: 130px 0 0px 140px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #6A707B;;
+}
+
+.terms_of_services a {
+    color: #000000;;
+}
+
+.message {
+    position: absolute;
+    margin: 110px 0 0 140px;
+    font-size: 16px;
+    font-family: Arial;
+
+}
+
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .front_page {
+        margin: 0;
+    }
+
+    body {
+
+        background-image: url("../img/background_mobile.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .front_page_header {
+        position: absolute;
+        margin: 0;
+
+        top: 0;
+
+        width: 100%;
+    }
+
+    .front_page_footer {
+        margin: 20px;
+    }
+
+    .subscription {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+        width: 90%;
+        margin: 40% 0 20% 0;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .text {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .description {
+        margin: 30px 20px 20px 20px;
+    }
+
+    .email_input form input {
+        position: relative;
+        margin: 0 20px 20px 20px;
+        width: 90%;
+        height: 60px;
+        text-indent: 1vw;
+
+    }
+
+    .arrow {
+        position: absolute;
+        margin-top: 25px;
+        right: 17vw;
+    }
+
+    .terms_of_services {
+        position: relative;
+        margin: 20px;
+    }
+
+    .message {
+        position: relative;
+        margin: 20px;
+        font-size: 14px;
+    }
+}
